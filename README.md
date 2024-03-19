@@ -1,5 +1,7 @@
 # PSXL Dev Tools
 
+> This is a fork of [PSXLDevTools](https://github.com/jimbrig/PSXLDevTools).
+
 <!-- markdownlint-disable MD033 MD045 -->
 
 <p style="vertical-alignment:middle">
@@ -14,8 +16,8 @@
     <em>PowerShell Core Module Containing Various Utility and Helpers for Advanced Office/Excel-based Developers.</em><br>
     <br><b>Links:</b><br>
     <a href=[SOURCE_CODE]>Source Code</a> |
-    <a href="https://docs.jimbrig.com/PSXLDevTools/">Published Documentation</a> |
-    <a href="https://github.com/jimbrig/PSXLDevTools/releases/tag/v0.0.2">Latest Release: [v0.0.2]</a> |
+    <a href="https://docs.joelvaneenwyk.com/PSXLDevTools/">Published Documentation</a> |
+    <a href="https://github.com/joelvaneenwyk/PSXLDevTools/releases/tag/v0.0.2">Latest Release: [v0.0.2]</a> |
     <a href="https://www.powershellgallery.com/packages/PSXLDevTools/">PowerShell Gallery</a>
     <br><br>
     <em>View the repo's <a href=[CHANGELOG]>CHANGELOG</a> for details on the progression of the codebase over time.</em>
@@ -27,14 +29,14 @@
 <!-- Badges:Begin -->
 
 [![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/PSXLDevTools?color=0092ff&label=PowerShell%20Gallery&logoColor=0092ff)](https://www.powershellgallery.com/packages/PSXLDevTools/)
-[![Publish GitHub NuGet Package](https://github.com/jimbrig/PSXLDevTools/actions/workflows/ghpkg.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/ghpkg.yml)
+[![Publish GitHub NuGet Package](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/ghpkg.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/ghpkg.yml)
 
-[![Test Module](https://github.com/jimbrig/PSXLDevTools/actions/workflows/test.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/test.yml)
-[![Build Module](https://github.com/jimbrig/PSXLDevTools/actions/workflows/build.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/build.yml)
-[![Publish Module](https://github.com/jimbrig/PSXLDevTools/actions/workflows/publish.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/publish.yml)
+[![Test Module](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/test.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/test.yml)
+[![Build Module](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/build.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/build.yml)
+[![Publish Module](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/publish.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/publish.yml)
 
-[![Publish Documentation](https://github.com/jimbrig/PSXLDevTools/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/mkdocs.yml)
-[![Automate Changelog](https://github.com/jimbrig/PSXLDevTools/actions/workflows/changelog.yml/badge.svg)](https://github.com/jimbrig/PSXLDevTools/actions/workflows/changelog.yml)
+[![Publish Documentation](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/mkdocs.yml)
+[![Automate Changelog](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/changelog.yml/badge.svg)](https://github.com/joelvaneenwyk/PSXLDevTools/actions/workflows/changelog.yml)
 
 <!-- Badges:End -->
 
@@ -201,7 +203,7 @@
 
 ## Installation
 
-> **Note** View my other PowerShell creations from my [PowerShell Gallery Packages Profile](https://www.powershellgallery.com/profiles/jimbrig)!
+> **Note** View my other PowerShell creations from my [PowerShell Gallery Packages Profile](https://www.powershellgallery.com/profiles/joelvaneenwyk)!
 
 The module `PSXLDevTools` is published on the [PowerShell Gallery](https://powershellgallery.com/PSXLDevTools/) and can be installed via `PowerShellGet` using the command(s) below:
 
@@ -340,7 +342,7 @@ Import-Module -Name PSXLDevTools
 
 ### Code of Conduct
 
-[Code of Conduct](https://github.com/jimbrig/PSXLDevTools?tab=coc-ov-file)
+[Code of Conduct](https://github.com/joelvaneenwyk/PSXLDevTools?tab=coc-ov-file)
 
 ### Contributing
 
