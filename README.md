@@ -1,10 +1,6 @@
-[SOURCE_CODE]: ./PSXLDevTools/
-[TESTS]: ./tests/
-[DOCS]: ./docs/
-[DOCS_SITE]: https://docs.jimbrig.com/PSXLDevTools/
-[BIN]: ./bin/
-[CHANGELOG]: ./CHANGELOG.md
+# PSXL Dev Tools
 
+<!-- markdownlint-disable MD033 MD045 -->
 
 <p style="vertical-alignment:middle">
     <img src="./resources/images/powershellcore.png" height="8%" width="8%" align="left">
@@ -50,7 +46,7 @@
 <summary>Table of Contents</summary>
 
 <!-- AUTO-GENERATED-CONTENT:START (TOC) -->
-- [PSXLDevTools](#psxldevtools)
+- [PSXL Dev Tools](#psxl-dev-tools)
   - [Contents](#contents)
   - [Repository](#repository)
   - [Installation](#installation)
@@ -69,6 +65,7 @@
       - [Excel Data Model Integration](#excel-data-model-integration)
     - [Developer Tool Integration and Automation](#developer-tool-integration-and-automation)
   - [Appendices](#appendices)
+    - [Code of Conduct](#code-of-conduct)
     - [Contributing](#contributing)
     - [License](#license)
     - [Credits](#credits)
@@ -199,12 +196,13 @@
 │       settings.json
 │       tasks.json
 ```
+
 </details>
 
 ## Installation
 
 > **Note** View my other PowerShell creations from my [PowerShell Gallery Packages Profile](https://www.powershellgallery.com/profiles/jimbrig)!
-    
+
 The module `PSXLDevTools` is published on the [PowerShell Gallery](https://powershellgallery.com/PSXLDevTools/) and can be installed via `PowerShellGet` using the command(s) below:
 
 ```powershell
@@ -226,12 +224,12 @@ Import-Module -Name PSXLDevTools
 #### Source Code Management
 
 - Import/Export VBA Project Code Modules:
-    - Standard Modules: `Source/VBA/Modules/mod*.bas`
-    - Class Modules: `Source/VBA/Classes/cls*.cls`
-    - Class Interface Modules: `Source/VBA/Interfaces/Icls*.cls`
-    - Excel Object Class Modules: `Source/VBA/ExcelObjects/<WorksheetCodeName>.docls|ThisWorkbook.docls`
-    - User Forms: `Source/VBA/Forms/frm*.frm` (*Optionally can remove any unnecessary `.frx` exported binaries.*)
-    - User Form Controls and Properties: `Source/VBA/Forms/FormControlsProperties.txt`
+  - Standard Modules: `Source/VBA/Modules/mod*.bas`
+  - Class Modules: `Source/VBA/Classes/cls*.cls`
+  - Class Interface Modules: `Source/VBA/Interfaces/Icls*.cls`
+  - Excel Object Class Modules: `Source/VBA/ExcelObjects/<WorksheetCodeName>.docls|ThisWorkbook.docls`
+  - User Forms: `Source/VBA/Forms/frm*.frm` (*Optionally can remove any unnecessary `.frx` exported binaries.*)
+  - User Form Controls and Properties: `Source/VBA/Forms/FormControlsProperties.txt`
 
 - Import/Export VBA Project Properties: `VBAProjectProps.txt`
 - Import/Export VBA Project References / Dependencies: `References.txt`
@@ -269,48 +267,48 @@ Import-Module -Name PSXLDevTools
 #### Office Fluent Ribbon XML
 
 - Manage and Import/Export Custom RibbonX Components:
-    - Excel Workbook Custom Ribbon XML: `Source/Excel/RibbonX/customUI14.xml|customUI.xml`
-    - Ribbon Callback Procedures Skeleton: `Source/Excel/RibbonX/Callbacks.txt`
-    - Any Icons or Images used in the Ribbon: `Source/Excel/RibbonX/Images/*[.ico|.png|.jpg]`
+  - Excel Workbook Custom Ribbon XML: `Source/Excel/RibbonX/customUI14.xml|customUI.xml`
+  - Ribbon Callback Procedures Skeleton: `Source/Excel/RibbonX/Callbacks.txt`
+  - Any Icons or Images used in the Ribbon: `Source/Excel/RibbonX/Images/*[.ico|.png|.jpg]`
 
 #### Workbook Metadata, Styling, Themes, and Custom Properties
 
 - Manage and Import/Export Excel Workbook Metadata:
-    - Workbook Custom Document Properties: `Source/Excel/Metadata/DocumentProperties.txt`
-    - WorkSheet Metadata (Code Names, Display Names, Tab Colors, etc.): `Source/Excel/Metadata/Worksheets.txt`
-    - NamedRanges: `Source/Excel/Metadata/NamedRanges.txt`
-    - ListObjects (Tables): `Source/Excel/Metadata/ListObjects.txt`
-    - PivotTables: `Source/Excel/Metadata/PivotTables.txt`
-    - PivotCaches: `Source/Excel/Metadata/PivotCaches.xml`
-    - Custom XML: `Source/Excel/Metadata/CustomXMLMap.xlm`
+  - Workbook Custom Document Properties: `Source/Excel/Metadata/DocumentProperties.txt`
+  - WorkSheet Metadata (Code Names, Display Names, Tab Colors, etc.): `Source/Excel/Metadata/Worksheets.txt`
+  - NamedRanges: `Source/Excel/Metadata/NamedRanges.txt`
+  - ListObjects (Tables): `Source/Excel/Metadata/ListObjects.txt`
+  - PivotTables: `Source/Excel/Metadata/PivotTables.txt`
+  - PivotCaches: `Source/Excel/Metadata/PivotCaches.xml`
+  - Custom XML: `Source/Excel/Metadata/CustomXMLMap.xlm`
 
 #### Workbook Styling, Themes, and Formats
 
 - Manage and Import/Export Excel Workbook Design Elements:
-    - Custom Themes, Theme Colors, Theme Fonts, and Theme Effects:
-        - `Source/Excel/Themes/<ProjectName>.thmx`
-        - `Source/Excel/Themes/Theme Colors/<ProjectName>_Colors.xml`
-        - `Source/Excel/Themes/Theme Fonts/<ProjectName>_Fonts.xml`
-        - `Source/Excel/Themes/Theme Effects/<ProjectName>_Effects.xml`
-    - Cell Styles: `Source/Excel/Metadata/CellStyles.xml`
-    - Number Formats: `Source/Excel/Metadata/NumberFormats.txt`
-    - Conditional Formatting Rules: `Source/Excel/Metadata/ConditionalFormattingRules.txt`
-    - TableStyles: `Source/Excel/Metadata/TableStyles.xml`
-    - Custom Lists: `Source/Excel/Metadata/CustomLists.xml`
-    - Charts: `Source/Excel/Metadata/Charts.txt`
+  - Custom Themes, Theme Colors, Theme Fonts, and Theme Effects:
+    - `Source/Excel/Themes/<ProjectName>.thmx`
+    - `Source/Excel/Themes/Theme Colors/<ProjectName>_Colors.xml`
+    - `Source/Excel/Themes/Theme Fonts/<ProjectName>_Fonts.xml`
+    - `Source/Excel/Themes/Theme Effects/<ProjectName>_Effects.xml`
+  - Cell Styles: `Source/Excel/Metadata/CellStyles.xml`
+  - Number Formats: `Source/Excel/Metadata/NumberFormats.txt`
+  - Conditional Formatting Rules: `Source/Excel/Metadata/ConditionalFormattingRules.txt`
+  - TableStyles: `Source/Excel/Metadata/TableStyles.xml`
+  - Custom Lists: `Source/Excel/Metadata/CustomLists.xml`
+  - Charts: `Source/Excel/Metadata/Charts.txt`
 
 ### Data Engineering and Modeling with PowerQuery and PowerPivot Data Models
 
 #### PowerQuery Source Code Management (M-Code Formulae and Metadata)
 
 - Manage and Import/Export PowerQuery M-Code:
-    - PowerQuery Queries: `Source/PowerQuery/Queries/*.pq`
-    - PowerQuery Query Metadata: `Source/PowerQuery/Queries/*.meta.pq`
-    - PowerQuery Query Data Source Dependencies: `Source/PowerQuery/DataSources/*.pqd`
-    - Data Mashups: `Source/PowerQuery/Mashups/*.pqm`
-    - Custom User Defined Functions and Parameters: `Source/PowerQuery/UDFs/*.pq`, `Source/PowerQuery/Parameters/*.pq`
-    - Associated Workbook Connections: `Source/PowerQuery/Connections/*.odc`
-    - Associated ListObjects/Query Tables: `Source/PowerQuery/Tables/*.xml`
+  - PowerQuery Queries: `Source/PowerQuery/Queries/*.pq`
+  - PowerQuery Query Metadata: `Source/PowerQuery/Queries/*.meta.pq`
+  - PowerQuery Query Data Source Dependencies: `Source/PowerQuery/DataSources/*.pqd`
+  - Data Mashups: `Source/PowerQuery/Mashups/*.pqm`
+  - Custom User Defined Functions and Parameters: `Source/PowerQuery/UDFs/*.pq`, `Source/PowerQuery/Parameters/*.pq`
+  - Associated Workbook Connections: `Source/PowerQuery/Connections/*.odc`
+  - Associated ListObjects/Query Tables: `Source/PowerQuery/Tables/*.xml`
 
 - Aggregate a library of PowerQuery Formulae and associated metadata into a single file for easy import/export.
 
@@ -319,10 +317,10 @@ Import-Module -Name PSXLDevTools
 #### Excel Data Model Integration
 
 - Manage and Import/Export Excel Workbook Data Models:
-    - Data Model Office Data Connection: `Source/PowerQuery/Connections/DataModel.odc`
-    - Data Model Metadata: `Source/Excel/Model/DataModel.xml`
-    - Data Model Relationships: `Source/Excel/Model/DataModelRelationships.xml`
-    - Data Model Tables: `Source/Excel/Model/DataModelTables.xml`
+  - Data Model Office Data Connection: `Source/PowerQuery/Connections/DataModel.odc`
+  - Data Model Metadata: `Source/Excel/Model/DataModel.xml`
+  - Data Model Relationships: `Source/Excel/Model/DataModelRelationships.xml`
+  - Data Model Tables: `Source/Excel/Model/DataModelTables.xml`
 
 - Import/Export Connection Strings and Parameterized Queries from the Data Model.
 
@@ -359,4 +357,3 @@ Import-Module -Name PSXLDevTools
 ### Changelog
 
 - [CHANGELOG]
-
