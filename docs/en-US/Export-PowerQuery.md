@@ -8,16 +8,18 @@ schema: 2.0.0
 # Export-PowerQuery
 
 ## SYNOPSIS
+
 Exports Power Queries' M-Code Formulae from an Excel PowerQuery Enabled Workbook to a specified folder.
 
 ## SYNTAX
 
 ```
 Export-PowerQuery [-Path] <String> [[-ExportPath] <String>] [[-Extension] <String>] [-Force]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+
 This function exports Power Queries' M-Code Formulae from an Excel PowerQuery Enabled Workbook to a specified
 destination source code folder.
 This allows for the M-Code to be version controlled and maintained in a
@@ -29,6 +31,7 @@ the Power Queries' M-Code Formulae from the specified source code folder into th
 ## EXAMPLES
 
 ### EXAMPLE 1
+
 ```
 Export-PowerQuery -Path ".\MyWorkbook.xlsx" -ExportPath ".\Source\PowerQuery"
 ```
@@ -36,6 +39,7 @@ Export-PowerQuery -Path ".\MyWorkbook.xlsx" -ExportPath ".\Source\PowerQuery"
 Successfully exported MyQuery to file C:\MyProject\Source\PowerQuery\MyQuery.pq
 
 ### EXAMPLE 2
+
 ```
 Export-PowerQuery -Path .\Test.xlsm -ExportPath .\Source\PQ -Extension .pqm -Force
 ```
@@ -45,6 +49,7 @@ Successfully exported MyQuery to file C:\MyProject\Source\PQ\MyQuery.pqm
 ## PARAMETERS
 
 ### -Path
+
 The path to the Excel PowerQuery Enabled Workbook.
 
 ```yaml
@@ -60,6 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportPath
+
 (Optional) The path to the folder where the Power Queries' M-Code Formulae will be exported to.
 If not specified,
 \`\<ProjectRoot\>/Source/PowerQuery/*\` is used as the default source code export path for the queries.
@@ -77,6 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Extension
+
 (Optional) The file extension to use for the exported Power Queries' M-Code Formulae.
 If not specified, \`.pq\` is used
 as the default file extension.
@@ -96,6 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
+
 (Optional) If specified, the function will overwrite any existing files in the specified source code export path.
 
 ```yaml
@@ -110,7 +118,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProgressAction
+
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -118,7 +143,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Collections.ArrayList
+
 ## NOTES
+
 During Development of Excel based applications, an essential component of developing and maintaining the
 project's source code is continuous export/import and synchronization of source files with the
 host application for portability and most of all, version control.
