@@ -1,0 +1,16 @@
+# Custom Dictionary Words
+addins
+Cyclomatic
+davidanson
+devcontainer
+dirtree
+docls
+Icls
+mkdocs
+powershellcore
+psake
+PSXL
+regedit
+rels
+thmx
+windowspowershell
