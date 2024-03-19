@@ -1,4 +1,6 @@
 @{
     Severity     = @('Error', 'Warning')
-    ExcludeRules = @('PSAvoidUsingDeprecatedManifestFields', 'PSPossibleIncorrectUsageOfAssignmentOperator')
+    ExcludeRules = @(
+        'PSAvoidUsingDeprecatedManifestFields',
+        'PSPossibleIncorrectUsageOfAssignmentOperator')
 }
