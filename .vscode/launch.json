@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "PowerShell Run Pester Tests",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "Invoke-Pester",
+            "createTemporaryIntegratedConsole": true,
+            "attachDotnetDebugger": true
+        },
+        {
             "name": "Test Module",
             "type": "PowerShell",
             "request": "launch",
@@ -24,13 +32,6 @@
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "createTemporaryIntegratedConsole": true
-        },
-        {
-            "name": "PowerShell Invoke Pester Tests",
-            "type": "PowerShell",
-            "cwd": "${workspaceFolder}",
-            "request": "launch",
-            "script": ". 'c:\\Users\\jbriggs010\\.vscode-insiders\\extensions\\ms-vscode.powershell-2022.12.1\\modules\\PowerShellEditorServices\\InvokePesterStub.ps1' -ScriptPath 'c:\\Users\\jbriggs010\\Dev\\jimbrig\\PSXLDevTools\\tests\\Export-PowerQueries.tests.ps1' -All -MinimumVersion5 -Output 'Diagnostic'"
         },
         {
             "name": "PowerShell: Launch Current File",
