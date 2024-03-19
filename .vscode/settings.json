@@ -1,4 +1,16 @@
 {
+    "[powershell]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": true,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+        "editor.semanticHighlighting.enabled": false,
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
     "files.defaultLanguage": "powershell",
     "files.trimTrailingWhitespace": false,
     "files.insertFinalNewline": true,
@@ -9,6 +21,10 @@
     "powershell.codeFormatting.useCorrectCasing": true,
     "powershell.scriptAnalysis.enable": true,
     "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
-    "pester.autoRunOnSave": false,
+    "powershell.pester.codeLens": true,
+    "powershell.codeFolding.enable": true,
+    "powershell.codeFormatting.alignPropertyValuePairs": true,
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": false,
+    "powershell.startAutomatically": true,
     "DockerRun.DisableDockerrc": true
 }
